@@ -11,6 +11,7 @@
 
 - [增加数据](#/AddData)
 - [获取数据](#/GetData)
+- [GetInfo](#/GetInfo)
 
 ---
 
@@ -61,6 +62,30 @@ interface ResGetData {
         /** 创建时间 */
         time: /*datetime*/ string
     }[]
+}
+```
+
+---
+
+## GetInfo <a id="/GetInfo"></a>
+
+**路径**
+- POST `/GetInfo`
+
+**请求**
+```ts
+interface ReqGetInfo {
+    id: number
+}
+```
+
+**响应**
+```ts
+interface ResGetInfo {
+    data: {
+        id: number,
+        content: string
+    }
 }
 ```
 
